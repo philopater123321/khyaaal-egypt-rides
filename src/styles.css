@@ -35,12 +35,15 @@
   --color-cream-foreground: var(--cream-foreground);
   --color-forest: var(--forest);
   --color-burgundy: var(--burgundy);
-  --font-display: "Cinzel", Georgia, serif;
-  --font-serif: "Cormorant Garamond", Georgia, serif;
-  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--family-display);
+  --font-serif: var(--family-serif);
+  --font-sans: var(--family-sans);
 }
 
 :root {
+  --family-display: "Cinzel", Georgia, serif;
+  --family-serif: "Cormorant Garamond", Georgia, serif;
+  --family-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   --radius: 0.25rem;
   --background: oklch(0.16 0.008 260);
   --foreground: oklch(0.96 0.008 85);
@@ -93,6 +96,34 @@
   h4 {
     font-family: var(--font-display);
     letter-spacing: 0.02em;
+  }
+}
+
+html[lang="ar"] {
+  --family-display: "Cairo", "Cinzel", Georgia, serif;
+  --family-serif: "Cairo", Georgia, serif;
+  --family-sans: "Cairo", ui-sans-serif, system-ui, sans-serif;
+}
+
+html[dir="rtl"] :is(a, button, span, p, h1, h2, h3, h4, li, label, option, figcaption) {
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+@utility hero-veil {
+  background-image: linear-gradient(
+    to right,
+    oklch(0.14 0.008 260 / 0.94),
+    oklch(0.14 0.008 260 / 0.66) 55%,
+    oklch(0.14 0.008 260 / 0.35)
+  );
+  html[dir="rtl"] & {
+    background-image: linear-gradient(
+      to left,
+      oklch(0.14 0.008 260 / 0.94),
+      oklch(0.14 0.008 260 / 0.66) 55%,
+      oklch(0.14 0.008 260 / 0.35)
+    );
   }
 }
 
