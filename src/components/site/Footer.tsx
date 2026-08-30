@@ -1,5 +1,6 @@
 import { Instagram, Youtube, Facebook, Music2, Phone } from "lucide-react";
 import { socials, PHONE, WHATSAPP } from "@/lib/site";
+import { useI18n } from "@/lib/i18n";
 import { HorseMark } from "./HorseMark";
 
 const socialIcon: Record<string, typeof Instagram> = {
@@ -9,29 +10,31 @@ const socialIcon: Record<string, typeof Instagram> = {
   YouTube: Youtube,
 };
 
-const quick = [
-  { label: "Experiences", href: "#experiences" },
-  { label: "Our Locations", href: "#locations" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Booking", href: "#contact" },
-];
-
 export function Footer() {
+  const { t } = useI18n();
+
+  const quick = [
+    { label: t.nav.experiences, href: "#experiences" },
+    { label: t.nav.locations, href: "#locations" },
+    { label: t.nav.gallery, href: "#gallery" },
+    { label: t.footer.booking, href: "#contact" },
+  ];
+
   return (
     <footer className="border-t border-border bg-card/60">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:grid-cols-2 lg:grid-cols-3 lg:px-10">
         <div>
           <div className="flex items-center gap-3">
             <HorseMark className="h-10 w-10 text-gold" />
-            <span className="font-display tracking-[0.3em] text-gold">KHYAAAL 11</span>
+            <span className="font-display tracking-[0.3em] text-gold">{t.brand}</span>
           </div>
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
-            Elite Arabian horse experiences at the Giza Pyramids and the Abusir countryside.
+            {t.footer.copy}
           </p>
         </div>
 
         <div>
-          <p className="eyebrow">Quick Links</p>
+          <p className="eyebrow">{t.footer.quickLinks}</p>
           <ul className="mt-5 space-y-3">
             {quick.map((q) => (
               <li key={q.href}>
@@ -47,11 +50,12 @@ export function Footer() {
         </div>
 
         <div>
-          <p className="eyebrow">Contact</p>
+          <p className="eyebrow">{t.footer.contact}</p>
           <a
             href={WHATSAPP}
             target="_blank"
             rel="noreferrer"
+            dir="ltr"
             className="mt-5 inline-flex items-center gap-3 text-sm text-gold"
           >
             <Phone className="h-4 w-4" />
@@ -78,7 +82,7 @@ export function Footer() {
       </div>
 
       <div className="border-t border-border py-6 text-center text-[0.7rem] tracking-[0.14em] text-muted-foreground">
-        © Khyaaal11 Equestrian Experience. All Rights Reserved.
+        {t.footer.rights}
       </div>
     </footer>
   );
