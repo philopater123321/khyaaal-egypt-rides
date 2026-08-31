@@ -35,7 +35,7 @@ export const img = {
   goldenHooves: goldenHooves.url,
 };
 
-export type Category = "Pyramid Rides" | "Abusir Trails" | "Photoshoots";
+export type Category = "Pyramid Rides" | "Saqqara Trails" | "Photoshoots";
 
 export const gallery: { src: string; alt: string; category: Category }[] = [
   {
@@ -50,13 +50,13 @@ export const gallery: { src: string; alt: string; category: Category }[] = [
   },
   {
     src: img.bayPyramid,
-    alt: "Rider on a bay Arabian horse in front of an Abusir pyramid",
-    category: "Abusir Trails",
+    alt: "Rider on a bay Arabian horse in front of a Saqqara pyramid",
+    category: "Saqqara Trails",
   },
   {
     src: img.sunsetBlack,
     alt: "Rider on a black Arabian horse at desert sunset",
-    category: "Abusir Trails",
+    category: "Saqqara Trails",
   },
   {
     src: img.greyRider,
@@ -76,73 +76,181 @@ export const gallery: { src: string; alt: string; category: Category }[] = [
   {
     src: img.goldenHooves,
     alt: "Rider in a hat leaning over a bay horse at Golden Hooves stable",
-    category: "Abusir Trails",
+    category: "Saqqara Trails",
   },
   {
     src: img.duo,
-    alt: "Two guides standing with a grey and a bay Arabian horse",
+    alt: "Two riders standing with a grey and a bay Arabian horse",
     category: "Pyramid Rides",
   },
   {
     src: img.groom,
-    alt: "Groom walking a saddled white Arabian horse near the stable",
+    alt: "Saddled white Arabian horse walked near the stable",
     category: "Pyramid Rides",
   },
 ];
 
-export const packages = [
+export type CatalogGroup = "vip" | "offers" | "training";
+
+export type CatalogItem = {
+  id: string;
+  group: CatalogGroup;
+  image: string;
+  price: number;
+  oldPrice?: number;
+  en: { title: string; copy: string };
+  ar: { title: string; copy: string };
+};
+
+export const catalog: CatalogItem[] = [
   {
-    title: "Pyramids Sunset & Sunrise Trails",
-    duration: "1–2 hours",
-    badge: "Signature",
-    image: img.pyramidsWalk,
-    copy: "Ride the sands of the Giza plateau as the light turns to gold, with unobstructed pyramid vistas and a dedicated photographer's eye at every stop.",
+    id: "romah",
+    group: "vip",
+    image: img.rearing,
+    price: 1000,
+    oldPrice: 1500,
+    en: {
+      title: 'VIP Ride on Stallion "Romah"',
+      copy: "Romah is our most expensive, top-tier stallion — a rare, show-standard Arabian reserved for VIP riders who want the finest horse on the plateau.",
+    },
+    ar: {
+      title: "طلعة خاصة VIP - الحصان رماح",
+      copy: "رماح هو أغلى وأرقى خيولنا — حصان عربي أصيل بمستوى المعارض، مخصص لضيوف الـ VIP الباحثين عن أفضل حصان في المنطقة.",
+    },
   },
   {
-    title: "Abusir Countryside & Desert Escapes",
-    duration: "2–3 hours",
-    badge: "Galloping",
-    image: img.bayPyramid,
-    copy: "Open desert spans, palm groves and ancient Abusir monuments — long, uninterrupted tracks for guests who want to truly canter.",
-  },
-  {
-    title: "Private VIP & Couple Shoots",
-    duration: "90 minutes",
-    badge: "VIP",
-    image: img.sunsetGuest,
-    copy: "Trained, camera-calm horses, styled tack and a private set. Curated for couples, bridal shoots and editorial portraits.",
-  },
-  {
-    title: "Night Rides under the Stars",
-    duration: "2 hours",
-    badge: "Moonlit",
+    id: "el-rayes",
+    group: "vip",
     image: img.sunsetBlack,
-    copy: "Moonlit desert riding closed with a bonfire, mint tea and Bedouin hospitality under an unpolluted Egyptian sky.",
+    price: 1000,
+    en: {
+      title: 'Advanced Ride on "El-Rayes"',
+      copy: "A forward, well-schooled stallion for professional riders — built for confident galloping across open desert.",
+    },
+    ar: {
+      title: "حصان الريس للفرسان المحترفين",
+      copy: "حصان قوي ومدرّب بإتقان للفرسان المحترفين — مثالي للجري السريع في الصحراء المفتوحة.",
+    },
   },
   {
-    title: "Private Riding Lessons",
-    duration: "45–60 minutes",
-    badge: "All levels",
+    id: "sbresso",
+    group: "vip",
+    image: img.chestnut,
+    price: 400,
+    en: {
+      title: 'Calm Ride on "Sbresso"',
+      copy: "The gentlest horse in the stable — ideal for first-time riders, families and relaxed photo rides.",
+    },
+    ar: {
+      title: "الحصان الهادي سبريسو",
+      copy: "أهدأ خيول الإسطبل — مثالي للمبتدئين والعائلات وجلسات التصوير الهادئة.",
+    },
+  },
+  {
+    id: "daily",
+    group: "offers",
+    image: img.groom,
+    price: 350,
+    oldPrice: 500,
+    en: {
+      title: "Daily Stable Ride",
+      copy: "Our everyday ride offer straight from the stable — a full riding session at a special daily price.",
+    },
+    ar: {
+      title: "عرض الرايد اليومي في الاسطبل",
+      copy: "عرض الركوب اليومي من الإسطبل — جلسة ركوب كاملة بسعر خاص كل يوم.",
+    },
+  },
+  {
+    id: "friday",
+    group: "offers",
+    image: img.duo,
+    price: 350,
+    oldPrice: 500,
+    en: {
+      title: "Friday Friends Offer",
+      copy: "Ride with your friends every Friday — group pricing per rider for the whole crew.",
+    },
+    ar: {
+      title: "عرض الصحاب يوم الجمعة",
+      copy: "اركب مع أصحابك كل جمعة — سعر خاص للمجموعة لكل فارس.",
+    },
+  },
+  {
+    id: "magic",
+    group: "offers",
+    image: img.bayPyramid,
+    price: 500,
+    en: {
+      title: "Magic Long-Distance Desert Ride",
+      copy: "Our longest route across the Samman desert — wide open sand, big distances and endless horizons.",
+    },
+    ar: {
+      title: "طلعة ماجيك أطول مسافة في السمان",
+      copy: "أطول مسار لدينا في صحراء السمان — رمال مفتوحة ومسافات طويلة وأفق لا ينتهي.",
+    },
+  },
+  {
+    id: "training",
+    group: "training",
     image: img.greyRider,
-    copy: "One-to-one instruction from seat and balance to collected canter, with horses matched precisely to your level.",
+    price: 3000,
+    en: {
+      title: "Professional Equestrian Training Course",
+      copy: "A full training course from seat and balance to collected canter and jumping basics, with horses matched to your level.",
+    },
+    ar: {
+      title: "تدريب فروسية",
+      copy: "كورس تدريب متكامل من الجلسة والتوازن حتى الجري المنضبط وأساسيات الحجز، مع خيول مناسبة لمستواك.",
+    },
+  },
+];
+
+export type GearItem = {
+  id: string;
+  price: number;
+  oldPrice?: number;
+  en: string;
+  ar: string;
+};
+
+export const gear: GearItem[] = [
+  {
+    id: "saddle",
+    price: 9000,
+    en: "Statue-Style Horn Saddle",
+    ar: "سرج بقرون شبيه للستاتيوس",
+  },
+  {
+    id: "leather-boots",
+    price: 1100,
+    oldPrice: 1500,
+    en: "Natural Leather Boots",
+    ar: "هاف بوت جلد طبيعي",
+  },
+  {
+    id: "synthetic-boots",
+    price: 850,
+    en: "Imported Synthetic Boots",
+    ar: "هاف بوت جلد صناعي مستورد",
+  },
+  {
+    id: "crop",
+    price: 150,
+    en: "Riding Crop",
+    ar: "كرباج ركوب",
   },
 ];
 
 export const locations = [
   {
-    name: "Giza Pyramids Archaeological Zone",
-    address: "Al Haram, Giza Governorate 3514012",
-    feature:
-      "Pyramid vistas moments from the plateau — ideal for first-time riders, tourists and short golden-hour trails.",
+    id: "giza",
     image: img.pyramidsWalk,
     maps:
       "https://maps.google.com/?q=X45V+8RR+اسطبلات+المنطقة+الاثرية,+Al+Haram,+Giza+Governorate+3514012",
   },
   {
-    name: "Abusir Countryside Stable — Golden Hooves",
-    address: "Abusir, Badrshein, Giza Governorate 3352533",
-    feature:
-      "Wide desert spans, tranquil palm groves and extended galloping tracks for experienced riders and long escapes.",
+    id: "saqqara",
     image: img.goldenHooves,
     maps:
       "https://www.google.com/maps?q=V6W6+PG2+Golden+Hooves+Stable,+Abusir,+Badrshein,+Giza+Governorate+3352533",
@@ -150,32 +258,8 @@ export const locations = [
 ];
 
 export const testimonials = [
-  {
-    quote:
-      "Sunrise at the pyramids on a purebred Arabian — the horses were immaculate, the team utterly professional. The single best morning of our Egypt trip.",
-    name: "Charlotte M.",
-    country: "United Kingdom",
-    flag: "🇬🇧",
-  },
-  {
-    quote:
-      "We booked the couple shoot in Abusir. Calm horses, beautiful tack, and photographs we now have framed at home. White-glove from first message to last.",
-    name: "Luca & Sofia",
-    country: "Italy",
-    flag: "🇮🇹",
-  },
-  {
-    quote:
-      "As a rider of twenty years I am hard to impress. Khyaaal11 gave me a forward, well-schooled horse and miles of open desert to gallop.",
-    name: "Anders K.",
-    country: "Sweden",
-    flag: "🇸🇪",
-  },
-  {
-    quote:
-      "The night ride with the bonfire felt like something out of a film. Safety briefing was thorough and our guide never left our side.",
-    name: "Dana R.",
-    country: "United States",
-    flag: "🇺🇸",
-  },
+  { flag: "🇬🇧" },
+  { flag: "🇮🇹" },
+  { flag: "🇸🇪" },
+  { flag: "🇺🇸" },
 ];
