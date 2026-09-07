@@ -14,9 +14,9 @@ export function Locations() {
 
         <div className="mt-16 grid gap-8 lg:grid-cols-2">
           {locations.map((l, i) => {
-            const c = s.items[i] ?? { name: l.name, address: l.address, feature: l.feature };
+            const c = s.items[l.id as "giza" | "saqqara"];
             return (
-              <Reveal key={l.name} delay={i * 0.12}>
+              <Reveal key={l.id} delay={i * 0.12}>
                 <article className="group flex h-full flex-col overflow-hidden border border-gold-deep/30 bg-white/60 transition-all duration-500 hover:-translate-y-1.5 hover:border-gold-deep hover:shadow-[var(--shadow-gold)]">
                   <div className="h-64 overflow-hidden">
                     <img
