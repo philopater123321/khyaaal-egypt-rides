@@ -108,32 +108,32 @@ export type CatalogItem = {
 
 export const catalog: CatalogItem[] = [
   {
+    id: "vip-private",
+    group: "vip",
+    image: img.vipRide,
+    price: 1000,
+    en: {
+      title: "VIP Private Ride",
+      copy: "A tailored private experience: sunrise or sunset ride, a professional photo session at the pyramids, your choice of pace, desert and pyramid exploration, then a rest with an Arabic drink at the stable. From 1,000 EGP, up to 4,000 EGP depending on the horse.",
+    },
+    ar: {
+      title: "طلعة VIP برايفت",
+      copy: "تجربة خاصة تناسبك: طلعة شروق أو غروب، سيشن تصوير احترافي عند الأهرامات، خيارات السرعة على مزاجك، استكشاف الصحراء والأهرامات، وبعدها استراحة ومشروب في القعدة العربي. تبدأ من 1000 جنيه وقد تصل إلى 4000 جنيه حسب نوع ومستوى الحصان.",
+    },
+  },
+  {
     id: "romah",
     group: "vip",
     image: img.rearing,
     price: 1000,
     oldPrice: 1500,
     en: {
-      title: 'VIP Ride on Stallion "Romah"',
-      copy: "Romah is our most expensive, top-tier stallion — a rare, show-standard Arabian reserved for VIP riders who want the finest horse on the plateau.",
+      title: 'Ride on Stallion "Romah"',
+      copy: "Romah is our most expensive, top-tier stallion — a rare, show-standard Arabian for riders who want the finest horse on the plateau.",
     },
     ar: {
-      title: "طلعة خاصة VIP - الحصان رماح",
-      copy: "رماح هو أغلى وأرقى خيولنا — حصان عربي أصيل بمستوى المعارض، مخصص لضيوف الـ VIP الباحثين عن أفضل حصان في المنطقة.",
-    },
-  },
-  {
-    id: "el-rayes",
-    group: "vip",
-    image: img.sunsetBlack,
-    price: 1000,
-    en: {
-      title: 'Advanced Ride on "El-Rayes"',
-      copy: "A forward, well-schooled stallion for professional riders — built for confident galloping across open desert.",
-    },
-    ar: {
-      title: "حصان الريس للفرسان المحترفين",
-      copy: "حصان قوي ومدرّب بإتقان للفرسان المحترفين — مثالي للجري السريع في الصحراء المفتوحة.",
+      title: "طلعة بالحصان رماح",
+      copy: "رماح هو أغلى وأرقى خيولنا — حصان عربي أصيل بمستوى المعارض لمن يبحث عن أفضل حصان في المنطقة.",
     },
   },
   {
