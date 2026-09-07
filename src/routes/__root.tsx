@@ -81,14 +81,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Elite Arabian horse experiences at the Giza Pyramids and Abusir countryside with Khyaaal11.",
+          "Elite Arabian horse experiences at the Giza Pyramids and the Saqqara desert with Khyaaal11.",
       },
       { name: "author", content: "Khyaaal11" },
       { property: "og:title", content: "Khyaaal11 | Luxury Arabian Horse Rides in Egypt" },
       {
         property: "og:description",
         content:
-          "Elite Arabian horse experiences at the Giza Pyramids and Abusir countryside with Khyaaal11.",
+          "Elite Arabian horse experiences at the Giza Pyramids and the Saqqara desert with Khyaaal11.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

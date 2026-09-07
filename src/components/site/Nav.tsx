@@ -13,6 +13,7 @@ export function Nav() {
   const links = [
     { label: t.nav.home, href: "#home" },
     { label: t.nav.experiences, href: "#experiences" },
+    { label: t.nav.shop, href: "#shop" },
     { label: t.nav.locations, href: "#locations" },
     { label: t.nav.gallery, href: "#gallery" },
     { label: t.nav.contact, href: "#contact" },

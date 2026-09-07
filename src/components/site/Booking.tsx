@@ -12,7 +12,7 @@ export function Booking() {
     name: "",
     phone: "",
     date: "",
-    location: "giza" as "giza" | "abusir",
+    location: "giza" as "giza" | "saqqara",
     riders: "2",
   });
 
@@ -30,7 +30,7 @@ export function Booking() {
       name: form.name,
       phone: form.phone,
       date: form.date,
-      location: form.location === "giza" ? b.giza : b.abusir,
+      location: form.location === "giza" ? b.giza : b.saqqara,
       riders: form.riders,
     });
     window.open(waLink(message), "_blank", "noopener");
@@ -119,7 +119,7 @@ export function Booking() {
                   className={`mt-2 ${field}`}
                 >
                   <option value="giza">{b.giza}</option>
-                  <option value="abusir">{b.abusir}</option>
+                  <option value="saqqara">{b.saqqara}</option>
                 </select>
               </div>
               <div>

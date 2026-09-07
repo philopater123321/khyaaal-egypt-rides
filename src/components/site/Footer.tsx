@@ -15,6 +15,7 @@ export function Footer() {
 
   const quick = [
     { label: t.nav.experiences, href: "#experiences" },
+    { label: t.nav.shop, href: "#shop" },
     { label: t.nav.locations, href: "#locations" },
     { label: t.nav.gallery, href: "#gallery" },
     { label: t.footer.booking, href: "#contact" },
