@@ -4,7 +4,7 @@ import { gallery, socials } from "@/lib/site";
 import { useI18n } from "@/lib/i18n";
 import { Reveal, SectionHeading } from "./Reveal";
 
-const tabs = ["All", "Pyramid Rides", "Abusir Trails", "Photoshoots"] as const;
+const tabs = ["All", "Pyramid Rides", "Saqqara Trails", "Photoshoots"] as const;
 
 const socialIcon: Record<string, typeof Instagram> = {
   Instagram,
