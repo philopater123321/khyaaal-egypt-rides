@@ -35,6 +35,8 @@ export const img = {
   bayPyramid: bayPyramid.url,
   sunsetGuest: sunsetGuest.url,
   goldenHooves: goldenHooves.url,
+  vipRide: vipRide.url,
+  magicWater: magicWater.url,
 };
 
 export type Category = "Pyramid Rides" | "Saqqara Trails" | "Photoshoots";
