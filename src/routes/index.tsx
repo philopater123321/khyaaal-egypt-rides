@@ -4,6 +4,7 @@ import { Nav } from "@/components/site/Nav";
 import { Hero } from "@/components/site/Hero";
 import { About } from "@/components/site/About";
 import { Packages } from "@/components/site/Packages";
+import { GearShop } from "@/components/site/GearShop";
 import { Locations } from "@/components/site/Locations";
 import { Gallery } from "@/components/site/Gallery";
 import { Testimonials } from "@/components/site/Testimonials";
@@ -13,7 +14,7 @@ import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 
 const title = "Khyaaal11 | Luxury Arabian Horse Rides at the Giza Pyramids";
 const description =
-  "Private Arabian horse experiences at the Giza Pyramids and Abusir — sunrise and sunset trails, VIP photoshoots, night rides and lessons. Book on WhatsApp.";
+  "Private Arabian horse rides at the Giza Pyramids and Saqqara — VIP stallions, daily ride offers, equestrian training and a gear shop. Book on WhatsApp.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -37,6 +38,7 @@ function Index() {
       <Hero />
       <About />
       <Packages />
+      <GearShop />
       <Locations />
       <Gallery />
       <Testimonials />
