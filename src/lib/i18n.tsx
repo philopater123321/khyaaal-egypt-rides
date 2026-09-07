@@ -39,7 +39,6 @@ const en = {
     titleB: "and hospitality",
     p1: "Khyaaal11 was founded by horsemen raised beside the pyramids, on the belief that a ride in Egypt should feel as considered as a five-star suite. Our Arabians descend from royal desert lines — light, willing and famously kind under saddle.",
     p2: "Every guest is matched to the right horse, briefed on safety, and looked after from the mounting block to the final photograph. Beginners are welcome; seasoned riders are genuinely challenged.",
-    years: "Years in the saddle",
     values: [
       {
         title: "Purebred Arabian Lineage",
@@ -213,7 +212,6 @@ const ar: Dict = {
     titleB: "وكرم الضيافة",
     p1: "",
     p2:"",
-    years: "",
     values: [
       {
         title: "خيول عربية أصيلة",

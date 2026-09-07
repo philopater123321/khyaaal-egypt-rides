@@ -18,12 +18,6 @@ export function About() {
               alt="Grey Arabian stallion rearing with a rider in the Egyptian desert"
               className="h-[30rem] w-full border border-border object-cover shadow-[var(--shadow-deep)] sm:h-[36rem]"
             />
-            <div className="absolute -bottom-6 -end-4 hidden border border-gold/50 bg-background/90 px-7 py-5 backdrop-blur-sm sm:block">
-              <p className="font-display text-3xl text-gold">11+</p>
-              <p className="mt-1 text-[0.68rem] uppercase tracking-[0.22em] text-muted-foreground">
-                {t.about.years}
-              </p>
-            </div>
           </div>
         </Reveal>
 
