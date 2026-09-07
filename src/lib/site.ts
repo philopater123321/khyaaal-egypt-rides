@@ -183,8 +183,8 @@ export const catalog: CatalogItem[] = [
   {
     id: "magic",
     group: "offers",
-    image: img.bayPyramid,
-    price: 500,
+    image: img.magicWater,
+    price: 700,
     en: {
       title: "Magic Long-Distance Desert Ride",
       copy: "Our longest route across the Samman desert — wide open sand, big distances and endless horizons.",
