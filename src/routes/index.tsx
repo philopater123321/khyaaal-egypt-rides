@@ -14,7 +14,7 @@ import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 
 const title = "Khyaaal11 | Luxury Arabian Horse Rides at the Giza Pyramids";
 const description =
-  "Private Arabian horse rides at the Giza Pyramids and Saqqara — VIP stallions, daily ride offers, equestrian training and a gear shop. Book on WhatsApp.";
+  "Private Arabian horse rides at the Giza Pyramids and Saqqara, with VIP stallions, daily ride offers, equestrian training and a gear shop. Book on WhatsApp.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

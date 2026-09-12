@@ -8,8 +8,9 @@ export function Testimonials() {
   const { t: tr, dir } = useI18n();
   const s = tr.testimonialsSection;
   const [i, setI] = useState(0);
-  const item = s.items[i] ?? s.items[0]!;
+  const item = s.items[i] ?? s.items[0];
   const flag = testimonials[i]?.flag ?? "";
+  if (!item) return null;
   const go = (d: number) => setI((v) => (v + d + s.items.length) % s.items.length);
 
   const Prev = dir === "rtl" ? ChevronRight : ChevronLeft;
@@ -31,10 +32,12 @@ export function Testimonials() {
             “{item.quote}”
           </p>
           <p className="mt-6 text-[0.72rem] uppercase tracking-[0.24em] text-gold">{item.name}</p>
-          <p className="mt-2 text-sm text-muted-foreground">
-            <span className="me-2">{flag}</span>
-            {item.country}
-          </p>
+          {item.country || flag ? (
+            <p className="mt-2 text-sm text-muted-foreground">
+              {flag ? <span className="me-2">{flag}</span> : null}
+              {item.country}
+            </p>
+          ) : null}
 
           <div className="mt-11 flex items-center justify-center gap-4">
             <button

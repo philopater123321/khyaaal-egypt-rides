@@ -10,6 +10,8 @@ import sunsetGuest from "@/assets/IMG_3219_11zon.jpg.asset.json";
 import goldenHooves from "@/assets/IMG_3233_1_11zon.jpg.asset.json";
 import vipRide from "@/assets/vip-ride.png.asset.json";
 import magicWater from "@/assets/magic-water-ride.png.asset.json";
+import espresso from "@/assets/espresso.jpeg.asset.json";
+import training from "@/assets/train.jpeg.asset.json";
 
 export const WHATSAPP = "https://wa.me/201055599648";
 export const PHONE = "+20 10 55599648";
@@ -37,6 +39,8 @@ export const img = {
   goldenHooves: goldenHooves.url,
   vipRide: vipRide.url,
   magicWater: magicWater.url,
+  espresso: espresso.url,
+  training: training.url,
 };
 
 export type Category = "Pyramid Rides" | "Saqqara Trails" | "Photoshoots";
@@ -128,26 +132,26 @@ export const catalog: CatalogItem[] = [
     price: 1000,
     oldPrice: 1500,
     en: {
-      title: 'Ride on Stallion "Romah"',
-      copy: "Romah is our most expensive, top-tier stallion — a rare, show-standard Arabian for riders who want the finest horse on the plateau.",
+      title: 'Ride on Stallion "El-Rayes"',
+      copy: "El-Rayes is our most expensive, top-tier stallion, a rare, show-standard Arabian for riders who want the finest horse on the plateau.",
     },
     ar: {
-      title: "طلعة بالحصان رماح",
-      copy: "رماح هو أغلى وأرقى خيولنا — حصان عربي أصيل بمستوى المعارض لمن يبحث عن أفضل حصان في المنطقة.",
+      title: "طلعة بالحصان الريس",
+      copy: "الريس هو أغلى وأرقى خيولنا، حصان عربي أصيل بمستوى المعارض لمن يبحث عن أفضل حصان في المنطقة.",
     },
   },
   {
     id: "sbresso",
     group: "vip",
-    image: img.chestnut,
+    image: img.espresso,
     price: 400,
     en: {
       title: 'Calm Ride on "Sbresso"',
-      copy: "The gentlest horse in the stable — ideal for first-time riders, families and relaxed photo rides.",
+      copy: "The gentlest horse in the stable, ideal for first-time riders, families and relaxed photo rides.",
     },
     ar: {
       title: "الحصان الهادي سبريسو",
-      copy: "أهدأ خيول الإسطبل — مثالي للمبتدئين والعائلات وجلسات التصوير الهادئة.",
+      copy: "أهدأ خيول الإسطبل، مثالي للمبتدئين والعائلات وجلسات التصوير الهادئة.",
     },
   },
   {
@@ -158,11 +162,11 @@ export const catalog: CatalogItem[] = [
     oldPrice: 500,
     en: {
       title: "Daily Stable Ride",
-      copy: "Our everyday ride offer straight from the stable — a full riding session at a special daily price.",
+      copy: "Our everyday ride offer straight from the stable, a full riding session at a special daily price.",
     },
     ar: {
       title: "عرض الرايد اليومي في الاسطبل",
-      copy: "عرض الركوب اليومي من الإسطبل — جلسة ركوب كاملة بسعر خاص كل يوم.",
+      copy: "عرض الركوب اليومي من الإسطبل، جلسة ركوب كاملة بسعر خاص كل يوم.",
     },
   },
   {
@@ -173,11 +177,11 @@ export const catalog: CatalogItem[] = [
     oldPrice: 500,
     en: {
       title: "Friday Friends Offer",
-      copy: "Ride with your friends every Friday — group pricing per rider for the whole crew.",
+      copy: "Ride with your friends every Friday, with group pricing per rider for the whole crew.",
     },
     ar: {
       title: "عرض الصحاب يوم الجمعة",
-      copy: "اركب مع أصحابك كل جمعة — سعر خاص للمجموعة لكل فارس.",
+      copy: "اركب مع أصحابك كل جمعة، بسعر خاص للمجموعة لكل فارس.",
     },
   },
   {
@@ -187,17 +191,17 @@ export const catalog: CatalogItem[] = [
     price: 700,
     en: {
       title: "Magic Long-Distance Desert Ride",
-      copy: "Our longest route across the Samman desert — wide open sand, big distances and endless horizons.",
+      copy: "Our longest route across the Samman desert, with wide open sand, big distances and endless horizons.",
     },
     ar: {
       title: "طلعة ماجيك أطول مسافة في السمان",
-      copy: "أطول مسار لدينا في صحراء السمان — رمال مفتوحة ومسافات طويلة وأفق لا ينتهي.",
+      copy: "أطول مسار لدينا في صحراء السمان، مع رمال مفتوحة ومسافات طويلة وأفق لا ينتهي.",
     },
   },
   {
     id: "training",
     group: "training",
-    image: img.greyRider,
+    image: img.training,
     price: 3000,
     en: {
       title: "Professional Equestrian Training Course",
@@ -262,8 +266,7 @@ export const locations = [
 ];
 
 export const testimonials = [
-  { flag: "🇬🇧" },
-  { flag: "🇮🇹" },
-  { flag: "🇸🇪" },
-  { flag: "🇺🇸" },
+  { flag: "" },
+  { flag: "" },
+  { flag: "" },
 ];
