@@ -22,8 +22,9 @@ export const img = {
   bayPyramid: "/IMG_3203_11zon.jpg",
   sunsetGuest: "/IMG_3219_11zon.jpg",
   goldenHooves: "/IMG_3233_1_11zon.jpg",
-  vipRide: "/vip-ride.png",
-  magicWater: "/magic-water-ride.png",
+  vipRide: "/IMG_3528_11zon.jpg", // استخدمنا صورة الحصان اللي بيرفع رجله لباقة الـ VIP مؤقتاً
+  magicWater: "/magic.jpeg",      // تم إضافة صورة ماجيك
+  saqqaraLocation: "/saqqara.jpg",// تم إضافة صورة فرع سقارة
   espresso: "/espresso.jpeg",
   training: "/train.jpeg",
 };
@@ -244,7 +245,7 @@ export const locations = [
   },
   {
     id: "saqqara",
-    image: img.goldenHooves,
+    image: img.saqqaraLocation,
     maps:
       "https://www.google.com/maps?q=V6W6+PG2+Golden+Hooves+Stable,+Abusir,+Badrshein,+Giza+Governorate+3352533",
   },
