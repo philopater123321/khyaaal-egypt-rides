@@ -1,18 +1,3 @@
-import pyramidsWalk from "@/assets/IMG_3525_11zon.jpg.asset.json";
-import rearing from "@/assets/IMG_3528_11zon.jpg.asset.json";
-import duo from "@/assets/IMG_2997_11zon.jpg.asset.json";
-import groom from "@/assets/IMG_3004_11zon.jpg.asset.json";
-import greyRider from "@/assets/IMG_3023_11zon.jpg.asset.json";
-import chestnut from "@/assets/IMG_3046_11zon.jpg.asset.json";
-import sunsetBlack from "@/assets/IMG_3134_11zon.jpg.asset.json";
-import bayPyramid from "@/assets/IMG_3203_11zon.jpg.asset.json";
-import sunsetGuest from "@/assets/IMG_3219_11zon.jpg.asset.json";
-import goldenHooves from "@/assets/IMG_3233_1_11zon.jpg.asset.json";
-import vipRide from "@/assets/vip-ride.png.asset.json";
-import magicWater from "@/assets/magic-water-ride.png.asset.json";
-import espresso from "@/assets/espresso.jpeg.asset.json";
-import training from "@/assets/train.jpeg.asset.json";
-
 export const WHATSAPP = "https://wa.me/201055599648";
 export const PHONE = "+20 10 55599648";
 
@@ -27,20 +12,20 @@ export const socials = [
 ];
 
 export const img = {
-  pyramidsWalk: pyramidsWalk.url,
-  rearing: rearing.url,
-  duo: duo.url,
-  groom: groom.url,
-  greyRider: greyRider.url,
-  chestnut: chestnut.url,
-  sunsetBlack: sunsetBlack.url,
-  bayPyramid: bayPyramid.url,
-  sunsetGuest: sunsetGuest.url,
-  goldenHooves: goldenHooves.url,
-  vipRide: vipRide.url,
-  magicWater: magicWater.url,
-  espresso: espresso.url,
-  training: training.url,
+  pyramidsWalk: "/IMG_3525_11zon.jpg",
+  rearing: "/IMG_3528_11zon.jpg",
+  duo: "/IMG_2997_11zon.jpg",
+  groom: "/IMG_3004_11zon.jpg",
+  greyRider: "/IMG_3023_11zon.jpg",
+  chestnut: "/IMG_3046_11zon.jpg",
+  sunsetBlack: "/IMG_3134_11zon.jpg",
+  bayPyramid: "/IMG_3203_11zon.jpg",
+  sunsetGuest: "/IMG_3219_11zon.jpg",
+  goldenHooves: "/IMG_3233_1_11zon.jpg",
+  vipRide: "/vip-ride.png",
+  magicWater: "/magic-water-ride.png",
+  espresso: "/espresso.jpeg",
+  training: "/train.jpeg",
 };
 
 export type Category = "Pyramid Rides" | "Saqqara Trails" | "Photoshoots";
