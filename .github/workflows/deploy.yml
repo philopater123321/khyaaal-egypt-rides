@@ -3,6 +3,7 @@ name: Deploy Vite Site to Pages
 on:
   push:
     branches: ["main"]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -27,9 +28,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci || npm install
 
       - name: Build
         run: npm run build
@@ -39,6 +41,9 @@ jobs:
           if [ -d ".output/public" ]; then
             mkdir -p dist
             cp -r .output/public/* dist/
+          fi
+          if [ -f "dist/index.html" ]; then
+            cp dist/index.html dist/404.html
           fi
 
       - name: Upload artifact
