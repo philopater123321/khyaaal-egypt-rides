@@ -12,6 +12,7 @@ const socialIcon: Record<string, typeof Instagram> = {
 
 export function Footer() {
   const { t } = useI18n();
+  const youtube = socials.find((social) => social.name === "YouTube");
 
   const quick = [
     { label: t.nav.experiences, href: "#experiences" },
@@ -79,6 +80,20 @@ export function Footer() {
               );
             })}
           </div>
+          {youtube ? (
+            <div className="mt-8 border-s-2 border-gold/50 ps-4">
+              <p className="text-sm leading-relaxed text-muted-foreground">{t.footer.youtubeNote}</p>
+              <a
+                href={youtube.href}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 inline-flex items-center gap-2 text-sm text-gold transition-colors hover:text-foreground"
+              >
+                <Youtube className="h-4 w-4" />
+                {t.footer.youtubeCta}
+              </a>
+            </div>
+          ) : null}
         </div>
       </div>
 

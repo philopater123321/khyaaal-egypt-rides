@@ -26,9 +26,9 @@ const en = {
   },
   hero: {
     eyebrow: "Giza Pyramids · Saqqara · Est. Egypt",
-    titleA: "Where Heritage Meets",
-    titleB: "Equestrian Perfection",
-    copy: "Experience the majestic wonders of Egypt on horseback with Khyaaal11 — purebred Arabians, immaculate tack and routes written into history.",
+    titleA: "We'll Teach All of Egypt",
+    titleB: "Horse Riding",
+    copy: "Experience the majestic wonders of Egypt on horseback with Khyaaal11, purebred Arabians, immaculate tack and routes written into history.",
     ctaPackages: "Explore Packages",
     ctaWhatsapp: "Instant WhatsApp Booking",
   },
@@ -37,12 +37,12 @@ const en = {
     titleA: "A stable built on",
     titleHighlight: "bloodline",
     titleB: "and hospitality",
-    p1: "Khyaaal11 was founded by horsemen raised beside the pyramids, on the belief that a ride in Egypt should feel as considered as a five-star suite. Our Arabians descend from royal desert lines — light, willing and famously kind under saddle.",
+    p1: "Khyaaal11 was founded by horsemen raised beside the pyramids, on the belief that a ride in Egypt should feel as considered as a five-star suite. Our Arabians descend from royal desert lines, light, willing and famously kind under saddle.",
     p2: "Every guest is matched to the right horse, briefed on safety, and looked after from the mounting block to the final photograph. Beginners are welcome; seasoned riders are genuinely challenged.",
     values: [
       {
         title: "Purebred Arabian Lineage",
-        copy: "Our herd is bred and kept to show standard — sound, schooled and cared for daily by farriers, vets and grooms who know each horse by name.",
+        copy: "Our herd is bred and kept to show standard, sound, schooled and cared for daily by farriers, vets and grooms who know each horse by name.",
       },
       {
         title: "Breathtaking Iconic Routes",
@@ -50,7 +50,7 @@ const en = {
       },
       {
         title: "VIP White-Glove Service",
-        copy: "Private rides by default, premium tack, a clear safety briefing and photography support — all arranged before you arrive.",
+        copy: "Private rides by default, premium tack, a clear safety briefing and photography support, all arranged before you arrive.",
       },
     ],
   },
@@ -71,7 +71,7 @@ const en = {
   shopSection: {
     eyebrow: "Gear Shop",
     title: "Saddles, boots and riding essentials",
-    copy: "Hand-picked equestrian gear available directly from our stables — order and collect on WhatsApp.",
+    copy: "Hand-picked equestrian gear available directly from our stables. Order and collect on WhatsApp.",
     order: "Order on WhatsApp",
     was: "Was",
     waMessage: (title: string, price: string) =>
@@ -80,17 +80,17 @@ const en = {
   locationsSection: {
     eyebrow: "Our Locations",
     title: "Two stables, two very different horizons",
-    copy: "Choose the pyramid plateau or the open desert of Saqqara — or ride both across a single stay.",
+    copy: "Choose the pyramid plateau or the open desert of Saqqara, or ride both across a single stay.",
     maps: "Open in Google Maps",
     items: {
       giza: {
         name: "Giza Pyramids Branch",
         address: "Archaeological Zone Stables, Al Haram, Giza Governorate 3514012",
         feature:
-          "Pyramid vistas moments from the plateau — ideal for first-time riders, visitors and short golden-hour trails.",
+          "Pyramid vistas moments from the plateau, ideal for first-time riders, visitors and short golden-hour trails.",
       },
       saqqara: {
-        name: "Saqqara Branch — Golden Hooves Stable",
+        name: "Saqqara Branch, Golden Hooves Stable",
         address: "Saqqara, Badrshein, Giza Governorate 3352533",
         feature:
           "Wide desert spans, tranquil palm groves and extended galloping tracks for experienced riders and long escapes.",
@@ -100,7 +100,7 @@ const en = {
   gallerySection: {
     eyebrow: "Gallery & Media Wall",
     title: "Moments from the plateau",
-    copy: "Frames from our rides, our horses and our guests — shot on location at Giza and Saqqara.",
+    copy: "Frames from our rides, our horses and our guests, shot on location at Giza and Saqqara.",
     tabs: {
       All: "All",
       "Pyramid Rides": "Pyramid Rides",
@@ -108,7 +108,7 @@ const en = {
       Photoshoots: "Photoshoots",
     },
     followEyebrow: "Follow the herd",
-    followTitle: "New rides, new horses and new sunsets — every week on our channels.",
+    followTitle: "New rides, new horses and new sunsets, every week on our channels.",
   },
   testimonialsSection: {
     eyebrow: "Guest Reviews",
@@ -118,28 +118,19 @@ const en = {
     review: (n: number) => `Review ${n}`,
     items: [
       {
-        quote:
-          "Sunrise at the pyramids on a purebred Arabian — the horses were immaculate and the team utterly professional. The single best morning of our Egypt trip.",
-        name: "Charlotte M.",
-        country: "United Kingdom",
+        quote: "A truly great place. The horses are very clean, and Captain Farouk and Captain Arafa teach us how to control the horse before we ride. A genuinely warm welcome.",
+        name: "Omar Abdo22",
+        country: "",
       },
       {
-        quote:
-          "We booked a couple photo ride in Saqqara. Calm horses, beautiful tack, and photographs we now have framed at home. White-glove from first message to last.",
-        name: "Luca & Sofia",
-        country: "Italy",
+        quote: "An excellent place with truly wonderful service. I definitely have to visit you again.",
+        name: "Ahmed Khaled",
+        country: "",
       },
       {
-        quote:
-          "As a rider of twenty years I am hard to impress. Khyaaal11 gave me a forward, well-schooled horse and miles of open desert to gallop.",
-        name: "Anders K.",
-        country: "Sweden",
-      },
-      {
-        quote:
-          "The long desert ride was unforgettable and the safety briefing was thorough. Booking on WhatsApp took less than a minute.",
-        name: "Dana R.",
-        country: "United States",
+        quote: "One of the best places in Saqqara. Everyone is kind and the service is excellent.",
+        name: "Logain Wael",
+        country: "",
       },
     ],
   },
@@ -177,6 +168,8 @@ Riders: ${f.riders}`,
     contact: "Contact",
     booking: "Booking",
     rights: "© Khyaaal11 Equestrian Experience. All Rights Reserved.",
+    youtubeNote: "Our YouTube channel answers many common questions.",
+    youtubeCta: "Visit our YouTube channel",
   },
   whatsapp: "Chat with us on WhatsApp",
 };
@@ -199,8 +192,8 @@ const ar: Dict = {
   },
   hero: {
     eyebrow: "أهرامات الجيزة · سقارة · مصر",
-    titleA: "حيث تلتقي الأصالة",
-    titleB: "بالفخامة الملكية",
+    titleA: "هنعلم مصر كلها",
+    titleB: "الخيل",
     copy: "استكشف أهرامات الجيزة وصحراء سقارة على ظهور أصايل الخيل العربية مع خيال 11.",
     ctaPackages: "استكشف الباقات",
     ctaWhatsapp: "تواصل عبر الواتساب",
@@ -215,7 +208,7 @@ const ar: Dict = {
     values: [
       {
         title: "خيول عربية أصيلة",
-        copy: "خيولنا مربّاة على مستوى المعارض — سليمة، مدرّبة، وتحت رعاية يومية من البياطرة والمدربين والعاملين الذين يعرفون كل حصان باسمه.",
+        copy: "خيولنا مربّاة على مستوى المعارض، سليمة ومدرّبة وتحت رعاية يومية من البياطرة والمدربين والعاملين الذين يعرفون كل حصان باسمه.",
       },
       {
         title: "مسارات أيقونية خلابة",
@@ -223,7 +216,7 @@ const ar: Dict = {
       },
       {
         title: "خدمة VIP فائقة",
-        copy: "طلعات خاصة بالكامل، أطقم سروج فاخرة، إحاطة واضحة بالسلامة ودعم تصوير احترافي — كل ذلك مُجهَّز قبل وصولك.",
+        copy: "طلعات خاصة بالكامل، أطقم سروج فاخرة، إحاطة واضحة بالسلامة ودعم تصوير احترافي، كل ذلك مُجهَّز قبل وصولك.",
       },
     ],
   },
@@ -244,7 +237,7 @@ const ar: Dict = {
   shopSection: {
     eyebrow: "متجر المستلزمات",
     title: "سروج وبوتات ومستلزمات الفروسية",
-    copy: "مستلزمات فروسية مختارة بعناية متاحة مباشرة من إسطبلاتنا — اطلب واستلم عبر الواتساب.",
+    copy: "مستلزمات فروسية مختارة بعناية متاحة مباشرة من إسطبلاتنا. اطلب واستلم عبر الواتساب.",
     order: "اطلب عبر الواتساب",
     was: "بدلاً من",
     waMessage: (title: string, price: string) =>
@@ -253,17 +246,17 @@ const ar: Dict = {
   locationsSection: {
     eyebrow: "الفروع والمواقع",
     title: "إسطبلان، وأفقان مختلفان تمامًا",
-    copy: "اختر هضبة الأهرامات أو صحراء سقارة المفتوحة — أو اجمع بينهما في رحلة واحدة.",
+    copy: "اختر هضبة الأهرامات أو صحراء سقارة المفتوحة، أو اجمع بينهما في رحلة واحدة.",
     maps: "افتح في خرائط جوجل",
     items: {
       giza: {
         name: "فرع أهرامات الجيزة (اسطبلات المنطقة الأثرية)",
         address: "اسطبلات المنطقة الأثرية، الهرم، محافظة الجيزة 3514012",
         feature:
-          "إطلالات على الأهرامات على بعد خطوات من الهضبة — مثالية للمبتدئين والزوار وجولات الساعة الذهبية القصيرة.",
+          "إطلالات على الأهرامات على بعد خطوات من الهضبة، مثالية للمبتدئين والزوار وجولات الساعة الذهبية القصيرة.",
       },
       saqqara: {
-        name: "فرع سقارة — إسطبل المهماز الذهبي",
+        name: "فرع سقارة، إسطبل المهماز الذهبي",
         address: "سقارة، البدرشين، محافظة الجيزة 3352533",
         feature:
           "مساحات صحراوية واسعة وبساتين نخيل هادئة ومسارات جري ممتدة للفرسان المتمرسين والرحلات الطويلة.",
@@ -273,7 +266,7 @@ const ar: Dict = {
   gallerySection: {
     eyebrow: "المعرض وحائط الصور",
     title: "لحظات من الهضبة",
-    copy: "لقطات من طلعاتنا وخيولنا وضيوفنا — مصوّرة في الجيزة وسقارة.",
+    copy: "لقطات من طلعاتنا وخيولنا وضيوفنا، مصوّرة في الجيزة وسقارة.",
     tabs: {
       All: "الكل",
       "Pyramid Rides": "جولات الأهرامات",
@@ -281,7 +274,7 @@ const ar: Dict = {
       Photoshoots: "جلسات التصوير",
     },
     followEyebrow: "تابعنا",
-    followTitle: "طلعات جديدة، خيول جديدة وغروب جديد — كل أسبوع على قنواتنا.",
+    followTitle: "طلعات جديدة، خيول جديدة وغروب جديد، كل أسبوع على قنواتنا.",
   },
   testimonialsSection: {
     eyebrow: "آراء الضيوف",
@@ -291,28 +284,19 @@ const ar: Dict = {
     review: (n: number) => `التقييم ${n}`,
     items: [
       {
-        quote:
-          "شروق الشمس عند الأهرامات على ظهر حصان عربي أصيل — خيول في أبهى حال وفريق بالغ الاحترافية. أجمل صباح في رحلتنا بمصر.",
-        name: "شارلوت م.",
-        country: "المملكة المتحدة",
+        quote: "مكان كويس جدا صراحة والخيل نضيفة جدا. وصراحة كابتن فاروق وكابتن عرفة قبل ما نركب بيعرفونا نتحكم في الحصان إزاي، وبجد استقبال جميل.",
+        name: "Omar Abdo22",
+        country: "",
       },
       {
-        quote:
-          "حجزنا طلعة تصوير للأزواج في سقارة. خيول هادئة وأطقم جميلة وصور نعلّقها الآن في منزلنا. خدمة راقية من أول رسالة إلى آخرها.",
-        name: "لوكا وصوفيا",
-        country: "إيطاليا",
+        quote: "مكان ممتاز ومعاملة أكتر من رائعة، لازم أجيلكم تاني.",
+        name: "Ahmed Khaled",
+        country: "",
       },
       {
-        quote:
-          "بعد عشرين عامًا من الفروسية يصعب إبهاري. قدّم لي خيال 11 حصانًا مدرّبًا ومتحمسًا وأميالًا من الصحراء المفتوحة للجري.",
-        name: "أندرس ك.",
-        country: "السويد",
-      },
-      {
-        quote:
-          "الطلعة الطويلة في الصحراء لا تُنسى وإحاطة السلامة كانت وافية. الحجز عبر الواتساب استغرق أقل من دقيقة.",
-        name: "دانا ر.",
-        country: "الولايات المتحدة",
+        quote: "من أحسن الأماكن في سقارة، وكلهم ذوق والمعاملة كويسة جدا.",
+        name: "Logain Wael",
+        country: "",
       },
     ],
   },
@@ -344,6 +328,8 @@ const ar: Dict = {
     contact: "تواصل معنا",
     booking: "الحجز",
     rights: "© خيال 11 لتجارب الفروسية. جميع الحقوق محفوظة.",
+    youtubeNote: "هتلاقي على قناتنا على يوتيوب إجابات لأسئلة كتير.",
+    youtubeCta: "زور قناة اليوتيوب",
   },
   whatsapp: "تحدث معنا عبر الواتساب",
 };
