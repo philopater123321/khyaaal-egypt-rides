@@ -37,12 +37,26 @@ jobs:
 
       - name: Prepare Output Directory
         run: |
+          # Handle Nitro / TanStack Start output
           if [ -d ".output/public" ]; then
             mkdir -p dist
             cp -r .output/public/* dist/
           fi
+          
+          # Handle Vite SSR / client output subfolder
+          if [ -d "dist/client" ]; then
+            cp -r dist/client/* dist/
+          fi
+
+          # Prevent GitHub Pages from ignoring Vite asset files
+          touch dist/.nojekyll
+
+          # Verify index.html and create SPA 404 fallback
           if [ -f "dist/index.html" ]; then
             cp dist/index.html dist/404.html
+          else
+            echo "::error::index.html not found in dist directory!"
+            exit 1
           fi
 
       - name: Upload artifact
