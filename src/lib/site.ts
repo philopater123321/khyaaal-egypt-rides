@@ -17,14 +17,14 @@ export const img = {
   duo: "/IMG_2997_11zon.jpg",
   groom: "/IMG_3004_11zon.jpg",
   greyRider: "/IMG_3023_11zon.jpg",
-  chestnut: "/IMG_3046_11zon.jpg",
+  chestnut: "/arabian horse.jpg",
   sunsetBlack: "/IMG_3134_11zon.jpg",
   bayPyramid: "/IMG_3203_11zon.jpg",
   sunsetGuest: "/IMG_3219_11zon.jpg",
-  goldenHooves: "/IMG_3233_1_11zon.jpg",
-  vipRide: "/IMG_3528_11zon.jpg", // استخدمنا صورة الحصان اللي بيرفع رجله لباقة الـ VIP مؤقتاً
-  magicWater: "/magic.jpeg",      // تم إضافة صورة ماجيك
-  saqqaraLocation: "/saqqara.jpg",// تم إضافة صورة فرع سقارة
+  goldenHooves: "/hat rider.jpg",
+  vipRide: "/IMG_3528_11zon.jpg", 
+  magicWater: "/magic.jpeg",      
+  saqqaraLocation: "/saqqara.jpg",
   espresso: "/espresso.jpeg",
   training: "/train.jpeg",
 };
