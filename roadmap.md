@@ -4,4 +4,4 @@
 - [x] Update intro paragraph wording in Arabic and English
 - [x] Replace VIP image with latest uploaded artwork
 - [x] Update Giza branch map link
-- [ ] Verify the updated page
+- [x] Verify the updated page
