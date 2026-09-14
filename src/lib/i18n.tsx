@@ -84,8 +84,8 @@ const en = {
     maps: "Open in Google Maps",
     items: {
       giza: {
-        name: "Giza Pyramids Branch",
-        address: "Archaeological Zone Stables, Al Haram, Giza Governorate 3514012",
+        name: "Baraa El Khayal Pyramids Stable",
+        address: "Baraa El Khayal Pyramids Stable, Al Haram, Giza Governorate 3514012",
         feature:
           "Pyramid vistas moments from the plateau, ideal for first-time riders, visitors and short golden-hour trails.",
       },
@@ -146,7 +146,7 @@ const en = {
     date: "Day / date",
     time: "Preferred time",
     location: "Branch",
-    giza: "Giza Pyramids Branch",
+    giza: "Baraa El Khayal Pyramids Stable",
     saqqara: "Saqqara Branch (Golden Hooves)",
     riders: "Number of riders",
     rideType: "Ride type",
@@ -264,8 +264,8 @@ const ar: Dict = {
     maps: "افتح في خرائط جوجل",
     items: {
       giza: {
-        name: "فرع أهرامات الجيزة (اسطبلات المنطقة الأثرية)",
-        address: "اسطبلات المنطقة الأثرية، الهرم، محافظة الجيزة 3514012",
+        name: "فرع أهرامات الجيزة (إسطبل الأهرامات براء الخيال)",
+        address: "إسطبل الأهرامات براء الخيال، الهرم، محافظة الجيزة 3514012",
         feature:
           "إطلالات على الأهرامات على بعد خطوات من الهضبة، مثالية للمبتدئين والزوار وجولات الساعة الذهبية القصيرة.",
       },
@@ -326,7 +326,7 @@ const ar: Dict = {
     date: "اليوم / التاريخ",
     time: "الوقت",
     location: "الفرع",
-    giza: "فرع أهرامات الجيزة",
+    giza: "إسطبل الأهرامات براء الخيال",
     saqqara: "فرع سقارة (المهماز الذهبي)",
     riders: "عدد الفرسان",
     rideType: "نوع الطلعة",
