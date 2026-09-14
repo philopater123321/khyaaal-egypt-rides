@@ -8,7 +8,7 @@ import sunsetBlack from "@/assets/IMG_3134_11zon.jpg.asset.json";
 import bayPyramid from "@/assets/IMG_3203_11zon.jpg.asset.json";
 import sunsetGuest from "@/assets/IMG_3219_11zon.jpg.asset.json";
 import goldenHooves from "@/assets/IMG_3233_1_11zon.jpg.asset.json";
-import vipRide from "@/assets/vip-ride.png.asset.json";
+import vipRide from "@/assets/vip-private-ride.png.asset.json";
 import magicWater from "@/assets/magic-water-ride.png.asset.json";
 import espresso from "@/assets/espresso.jpeg.asset.json";
 import training from "@/assets/train.jpeg.asset.json";
@@ -254,8 +254,7 @@ export const locations = [
   {
     id: "giza",
     image: img.pyramidsWalk,
-    maps:
-      "https://maps.google.com/?q=X45V+8RR+اسطبلات+المنطقة+الاثرية,+Al+Haram,+Giza+Governorate+3514012",
+    maps: "https://maps.app.goo.gl/nwYeheqWmCzkDozD9?g_st=ic",
   },
   {
     id: "saqqara",
