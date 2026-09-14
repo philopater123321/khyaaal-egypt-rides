@@ -1,18 +1,3 @@
-import pyramidsWalk from "@/assets/IMG_3525_11zon.jpg.asset.json";
-import rearing from "@/assets/IMG_3528_11zon.jpg.asset.json";
-import duo from "@/assets/IMG_2997_11zon.jpg.asset.json";
-import groom from "@/assets/IMG_3004_11zon.jpg.asset.json";
-import greyRider from "@/assets/IMG_3023_11zon.jpg.asset.json";
-import chestnut from "@/assets/IMG_3046_11zon.jpg.asset.json";
-import sunsetBlack from "@/assets/IMG_3134_11zon.jpg.asset.json";
-import bayPyramid from "@/assets/IMG_3203_11zon.jpg.asset.json";
-import sunsetGuest from "@/assets/IMG_3219_11zon.jpg.asset.json";
-import goldenHooves from "@/assets/IMG_3233_1_11zon.jpg.asset.json";
-import vipRide from "@/assets/vip-private-ride.png.asset.json";
-import magicWater from "@/assets/magic-water-ride.png.asset.json";
-import espresso from "@/assets/espresso.jpeg.asset.json";
-import training from "@/assets/train.jpeg.asset.json";
-
 export const WHATSAPP = "https://wa.me/201055599648";
 export const PHONE = "+20 10 55599648";
 
@@ -27,20 +12,20 @@ export const socials = [
 ];
 
 export const img = {
-  pyramidsWalk: pyramidsWalk.url,
-  rearing: rearing.url,
-  duo: duo.url,
-  groom: groom.url,
-  greyRider: greyRider.url,
-  chestnut: chestnut.url,
-  sunsetBlack: sunsetBlack.url,
-  bayPyramid: bayPyramid.url,
-  sunsetGuest: sunsetGuest.url,
-  goldenHooves: goldenHooves.url,
-  vipRide: vipRide.url,
-  magicWater: magicWater.url,
-  espresso: espresso.url,
-  training: training.url,
+  pyramidsWalk: "/images/IMG_3525_11zon.jpg",
+  rearing: "/images/IMG_3528_11zon.jpg",
+  duo: "/images/IMG_2997_11zon.jpg",
+  groom: "/images/IMG_3004_11zon.jpg",
+  greyRider: "/images/IMG_3023_11zon.jpg",
+  chestnut: "/images/IMG_3046_11zon.jpg",
+  sunsetBlack: "/images/IMG_3134_11zon.jpg",
+  bayPyramid: "/images/IMG_3203_11zon.jpg",
+  sunsetGuest: "/images/IMG_3219_11zon.jpg",
+  goldenHooves: "/images/IMG_3233_1_11zon.jpg",
+  vipRide: "/images/vip-private-ride.png",
+  magicWater: "/images/magic-water-ride.png",
+  espresso: "/images/espresso.jpeg",
+  training: "/images/train.jpeg",
 };
 
 export type Category = "Pyramid Rides" | "Saqqara Trails" | "Photoshoots";
