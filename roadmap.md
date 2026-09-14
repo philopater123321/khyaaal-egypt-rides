@@ -1,7 +1,7 @@
-- [ ] Remove GitHub Pages deployment changes and fix build
-- [ ] Expand booking form fields and WhatsApp message in both languages
-- [ ] Make Book a Ride scroll to booking form
-- [ ] Update intro paragraph wording in Arabic and English
-- [ ] Replace VIP image with latest uploaded artwork
-- [ ] Update Giza branch map link
+- [x] Remove GitHub Pages deployment changes and fix build
+- [x] Expand booking form fields and WhatsApp message in both languages
+- [x] Make Book a Ride scroll to booking form
+- [x] Update intro paragraph wording in Arabic and English
+- [x] Replace VIP image with latest uploaded artwork
+- [x] Update Giza branch map link
 - [ ] Verify the updated page
