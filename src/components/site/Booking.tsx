@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { MessageCircle, Phone } from "lucide-react";
-import { waLink, PHONE } from "@/lib/site";
+import { catalog, waLink, PHONE } from "@/lib/site";
 import { useI18n } from "@/lib/i18n";
 import { Reveal } from "./Reveal";
 
@@ -12,8 +12,11 @@ export function Booking() {
     name: "",
     phone: "",
     date: "",
+    time: "",
     location: "giza" as "giza" | "saqqara",
     riders: "2",
+    rideType: "",
+    experience: "",
   });
 
   useEffect(() => {
@@ -26,12 +29,19 @@ export function Booking() {
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
+    const selectedRide = catalog.find((ride) => ride.id === form.rideType);
+    if (!selectedRide) return;
+    const total = selectedRide.price * Number(form.riders || 0);
     const message = b.message({
       name: form.name,
       phone: form.phone,
       date: form.date,
       location: form.location === "giza" ? b.giza : b.saqqara,
       riders: form.riders,
+      time: form.time,
+      rideType: selectedRide[lang].title,
+      total: `${total.toLocaleString(lang === "ar" ? "ar-EG" : "en-US")} ${t.currency}`,
+      experience: form.experience,
     });
     window.open(waLink(message), "_blank", "noopener");
   };
@@ -73,6 +83,7 @@ export function Booking() {
               <input
                 id="name"
                 required
+                maxLength={100}
                 value={form.name}
                 onChange={set("name")}
                 placeholder={b.namePlaceholder}
@@ -87,6 +98,7 @@ export function Booking() {
                 <input
                   id="phone"
                   required
+                  maxLength={30}
                   value={form.phone}
                   onChange={set("phone")}
                   placeholder={b.phonePlaceholder}
@@ -103,6 +115,21 @@ export function Booking() {
                   required
                   value={form.date}
                   onChange={set("date")}
+                  className={`mt-2 ${field}`}
+                />
+              </div>
+            </div>
+            <div className="grid gap-5 sm:grid-cols-2">
+              <div>
+                <label className={label} htmlFor="time">
+                  {b.time}
+                </label>
+                <input
+                  id="time"
+                  type="time"
+                  required
+                  value={form.time}
+                  onChange={set("time")}
                   className={`mt-2 ${field}`}
                 />
               </div>
@@ -136,6 +163,47 @@ export function Booking() {
                   className={`mt-2 ${field}`}
                 />
               </div>
+            </div>
+            <div className="grid gap-5 sm:grid-cols-2">
+              <div>
+                <label className={label} htmlFor="rideType">
+                  {b.rideType}
+                </label>
+                <select
+                  id="rideType"
+                  required
+                  value={form.rideType}
+                  onChange={set("rideType")}
+                  className={`mt-2 ${field}`}
+                >
+                  <option value="" disabled>{b.selectRide}</option>
+                  {catalog.map((ride) => (
+                    <option key={ride.id} value={ride.id}>{ride[lang].title}</option>
+                  ))}
+                </select>
+              </div>
+              <div>
+                <label className={label} htmlFor="total">{b.total}</label>
+                <input
+                  id="total"
+                  readOnly
+                  value={form.rideType ? `${(catalog.find((ride) => ride.id === form.rideType)?.price ?? 0) * Number(form.riders || 0)} ${t.currency}` : ""}
+                  className={`mt-2 ${field}`}
+                />
+              </div>
+            </div>
+            <div>
+              <label className={label} htmlFor="experience">{b.experience}</label>
+              <textarea
+                id="experience"
+                required
+                maxLength={600}
+                rows={4}
+                value={form.experience}
+                onChange={set("experience")}
+                placeholder={b.experiencePlaceholder}
+                className={`mt-2 resize-y ${field}`}
+              />
             </div>
             <button
               type="submit"

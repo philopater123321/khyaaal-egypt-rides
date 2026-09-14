@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
-import { WHATSAPP } from "@/lib/site";
 import { useI18n } from "@/lib/i18n";
 import { HorseMark } from "./HorseMark";
 import { LanguageSwitcher } from "./LanguageSwitcher";
@@ -56,9 +55,7 @@ export function Nav() {
         <div className="flex items-center gap-3">
           <LanguageSwitcher />
           <a
-            href={WHATSAPP}
-            target="_blank"
-            rel="noreferrer"
+            href="#contact"
             className="hidden items-center gap-2 border border-gold/60 px-5 py-2.5 text-[0.72rem] uppercase tracking-[0.2em] text-gold transition-all hover:bg-gold hover:text-primary-foreground hover:shadow-[var(--shadow-gold)] sm:inline-flex"
           >
             <MessageCircle className="h-4 w-4" />

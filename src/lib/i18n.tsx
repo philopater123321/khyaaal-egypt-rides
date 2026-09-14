@@ -28,7 +28,7 @@ const en = {
     eyebrow: "Giza Pyramids · Saqqara · Est. Egypt",
     titleA: "We'll Teach All of Egypt",
     titleB: "Horse Riding",
-    copy: "Experience the majestic wonders of Egypt on horseback with Khyaaal11, purebred Arabians, immaculate tack and routes written into history.",
+    copy: "Explore the Giza Pyramids and the Saqqara desert on purebred Arabian horses with Baraa El Khayal.",
     ctaPackages: "Explore Packages",
     ctaWhatsapp: "Instant WhatsApp Booking",
   },
@@ -143,11 +143,17 @@ const en = {
     namePlaceholder: "Your name",
     phone: "Phone / WhatsApp",
     phonePlaceholder: "+00 000 000 000",
-    date: "Preferred date",
-    location: "Stable location",
+    date: "Day / date",
+    time: "Preferred time",
+    location: "Branch",
     giza: "Giza Pyramids Branch",
     saqqara: "Saqqara Branch (Golden Hooves)",
     riders: "Number of riders",
+    rideType: "Ride type",
+    selectRide: "Choose a ride",
+    total: "Total price",
+    experience: "Riding experience",
+    experiencePlaceholder: "How many times has each person ridden? When was the last time? Is anyone afraid, or is everyone comfortable?",
     submit: "Send via WhatsApp",
     message: (f: {
       name: string;
@@ -155,12 +161,20 @@ const en = {
       date: string;
       location: string;
       riders: string;
+      time: string;
+      rideType: string;
+      total: string;
+      experience: string;
     }) => `Hello Khyaaal11, I would like to book a ride.
 Name: ${f.name}
 WhatsApp: ${f.phone}
-Preferred date: ${f.date}
-Stable: ${f.location}
-Riders: ${f.riders}`,
+Day / date: ${f.date}
+Time: ${f.time}
+Branch: ${f.location}
+Number of riders: ${f.riders}
+Ride type: ${f.rideType}
+Total price: ${f.total}
+Riding experience: ${f.experience}`,
   },
   footer: {
     copy: "Elite Arabian horse experiences at the Giza Pyramids and the Saqqara desert.",
@@ -194,7 +208,7 @@ const ar: Dict = {
     eyebrow: "أهرامات الجيزة · سقارة · مصر",
     titleA: "هنعلم مصر كلها",
     titleB: "الخيل",
-    copy: "استكشف أهرامات الجيزة وصحراء سقارة على ظهور أصايل الخيل العربية مع خيال 11.",
+    copy: "استكشف أهرامات الجيزة وصحراء سقارة على ظهور أصايل الخيل العربية مع براء الخيال.",
     ctaPackages: "استكشف الباقات",
     ctaWhatsapp: "تواصل عبر الواتساب",
   },
@@ -309,18 +323,28 @@ const ar: Dict = {
     namePlaceholder: "اسمك",
     phone: "الهاتف / الواتساب",
     phonePlaceholder: "+00 000 000 000",
-    date: "التاريخ المفضل",
+    date: "اليوم / التاريخ",
+    time: "الوقت",
     location: "الفرع",
     giza: "فرع أهرامات الجيزة",
     saqqara: "فرع سقارة (المهماز الذهبي)",
     riders: "عدد الفرسان",
+    rideType: "نوع الطلعة",
+    selectRide: "اختر نوع الطلعة",
+    total: "إجمالي السعر",
+    experience: "خبرة الركوب",
+    experiencePlaceholder: "كل فرد ركب كام مرة؟ وآخر مرة إمتى؟ وفي حد بيخاف ولا كله تمام؟",
     submit: "أرسل عبر الواتساب",
     message: (f) => `مرحبًا خيال 11، أرغب في حجز جولة.
 الاسم: ${f.name}
 الواتساب: ${f.phone}
-التاريخ المفضل: ${f.date}
+اليوم / التاريخ: ${f.date}
+الوقت: ${f.time}
 الفرع: ${f.location}
-عدد الفرسان: ${f.riders}`,
+العدد: ${f.riders}
+نوع الطلعة: ${f.rideType}
+إجمالي السعر: ${f.total}
+خبرة الركوب: ${f.experience}`,
   },
   footer: {
     copy: "تجارب فروسية راقية بخيول عربية أصيلة عند أهرامات الجيزة وصحراء سقارة.",
